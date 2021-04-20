@@ -1,0 +1,67 @@
+{% load static %}
+<nav class="navbar navbar-expand-sm bg-info navbar-dark">
+  <!-- Brand/logo -->
+  <a class="navbar-brand" href="{% url 'hm' %}">
+    <img src="{% static 'images/libnew.jpg' %}" alt="logo" style="width:40px;">
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+  <!-- Links -->
+  <ul class="navbar-nav">
+    {% if not user.is_authenticated %}
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'hm' %}">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'at' %}">AboutUs</a>
+    </li>
+   
+    
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'Books' %}">Books Available</a>
+    </li>
+    
+    {% else %}
+     <li class="nav-item">
+      <a class="nav-link" href="{% url 'hm' %}">Home</a>
+    </li>
+     <li class="nav-item">
+      <a class="nav-link" href="{% url 'dsh' %}">Dashboard</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'complaint' %}">Complaint</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'ct' %}">ContactUs</a>
+    </li>
+     <li class="nav-item">
+      <a class="nav-link" href="{% url 'Books' %}">Books Available</a>
+      
+    </li>
+    {% endif %}
+  </ul>
+  <ul class="navbar-nav ml-auto" style="margin-right:60px">
+    {% if not user.is_authenticated %}
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'log' %}">LogIn</a>
+    </li>
+
+    {% else %}
+  <li class="dropdown">
+    <a type="button" class="nav-link dropdown-toggle" data-toggle="dropdown">
+      {{user.username}}
+    </a>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="{% url 'hm' %}">Home</a>
+      <a class="dropdown-item" href="{% url 'cg' %}">Change Password</a>
+      <a class="dropdown-item" href="{% url 'profile' %}">Profile</a>
+      <a class="dropdown-item" href="{% url 'logo' %}">Logout</a>
+
+    </div>
+</li>
+{% endif %}
+</ul>
+</div>
+</nav>
