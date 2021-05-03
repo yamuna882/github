@@ -1,5 +1,5 @@
 from django.urls import path
-from NoteApp import views #from . import views
+from NoteApp import views
 from django.contrib.auth import views as ad
  
 
@@ -19,5 +19,18 @@ urlpatterns = [
     path('rst/',ad.PasswordResetView.as_view(template_name="html/resetpass.html"),name="reset_password"),
     path('rst_done/',ad.PasswordResetDoneView.as_view(template_name='html/resetpassworddone.html'),name='password_reset_done'),
     path('rst_confirm/<uidb64>/<token>/',ad.PasswordResetConfirmView.as_view(template_name='html/resetconfirm.html'),name='password_reset_confirm'),
+    path('ba/',views.Books_AvailF,name='books_avail'),
+    path('sr/',views.sendrequest,name='send_request'),
+    path('bas/',views.studentbooks_avail,name='studentbooks_avail'),
+    path('myreq/',views.myreq,name='myreq'),
+    path('notedelete/<str:id>',views.datadelete,name="datadelete"),
+    path('Bookdelete/<str:id>',views.Bookdelete,name="Bookdelete"),
+    path('viewn/',views.viewnt,name='viewn'),
+    path('notipending/',views.notipending,name="notipending"),
+    path('accepting/',views.accepting,name="accepting"),
+    path('rejecting/',views.rejecting,name="rejecting"),
+    path('noteaccept/<str:id>',views.acceptadmin,name="acceptadmin"),
+    path('notereject/<str:id>',views.rejectadmin,name="rejectadmin"),
+    # path('deletest_ad_data/<str:id>',views.deletest_ad_data,name='deletest_ad_data'),
 
 ]
