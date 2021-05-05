@@ -114,11 +114,13 @@ def Books_AvailF(rq):
 def sendrequest(rq):
 	if rq.method=="POST":
 		a=rq.POST['Book_name']
+		c=rq.POST['Book_author']
+
 		b=rq.POST['browser']
 		if b=='Book_Retrun':
-			notes=st_admin_data.objects.all()
+			notes=st_admin_data.objects.filter(Book_name=a)
 			for i in notes:
-				if i.Book_name==a and i.issue_status=='1' :
+				if i.Book_author==c and i.issue_status==1:
 					i.issue_status='3'
 					i.save()
 		else:
@@ -208,6 +210,20 @@ def rejectadmin(req,id):
 	rc.issue_status='2'
 	rc.save()
 	return redirect('/viewn')
+
+def books_return(request):
+	rc=st_admin_data.objects.filter(issue_status=3)
+	print(rc)
+	return render(request,'html/Books_return.html',{'rc':rc})
+
+def return_accept(rq,id):
+	rc=st_admin_data.objects.get(id=id)
+	rc.issue_status='4'
+	rc.save()
+	return redirect('books_return')
+
+
+
 
 
 

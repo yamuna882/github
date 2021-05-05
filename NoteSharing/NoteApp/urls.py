@@ -31,6 +31,10 @@ urlpatterns = [
     path('rejecting/',views.rejecting,name="rejecting"),
     path('noteaccept/<str:id>',views.acceptadmin,name="acceptadmin"),
     path('notereject/<str:id>',views.rejectadmin,name="rejectadmin"),
-    # path('deletest_ad_data/<str:id>',views.deletest_ad_data,name='deletest_ad_data'),
+    path('books_return/',views.books_return,name='books_return'),
+    path('return_accept/<int:id>',views.return_accept,name='return_accept'),
+    # path('return_reject/',views.return_reject,name='return_reject'),
+
+    
 
 ]

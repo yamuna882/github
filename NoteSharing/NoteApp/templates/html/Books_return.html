@@ -1,0 +1,68 @@
+{% extends 'html/base.html' %}
+{% load static %}
+{% block title %}allnotes{% endblock %}
+
+{% block content %}
+<script>
+	$(document).on('click', '.confirm-delete', function(){
+    return confirm('Are you sure you want to delete this?');
+})
+	$(document).on('click', '.confirm-accept', function(){
+    return confirm('Are you sure you want to accept this?');
+})
+	$(document).on('click', '.confirm-reject', function(){
+    return confirm('Are you sure you want to reject this?');
+})
+</script>
+<div class="text-center text-danger">
+	<br>
+	<span><i>View All Notifications</i></span>
+	
+</div>
+<hr>
+
+<div class="container">
+	<table class="table table-bordered">
+		<input type="button" value="Go back!" onclick="history.back()" class="btn btn-info">
+		<tr class="bg bg-info">
+			<td>S.No</td>
+			<td>Rg_No</td>
+			<td>Name</td>
+			<td>Book_Name</td>
+			<td>Book_Author</td>
+			<td>Action</td>
+			
+		</tr>
+		{% for i in rc %}
+			<tr>
+				<td>{{forloop.counter}}</td>
+				<td>{{i.Rg_No}}</td>
+				<td>{{i.Name}}</td>	
+				<td>{{i.Book_name}}</td>
+				<td>{{i.Book_author}}</td>
+
+				<td><a href="{% url 'return_accept' i.id %}" class="btn btn-info">RturnAccpt</a><a href="" class="btn btn-warning">RturnRjct</a></td>
+				
+				</td>				
+			</tr>
+			{% for i in rc %}
+			{if i.issue_status is 4}
+			<tr>
+				<td>{{forloop.counter}}</td>
+				<td>{{i.Rg_No}}</td>
+				<td>{{i.Name}}</td>	
+				<td>{{i.Book_name}}</td>
+				<td>{{i.Book_author}}</td>
+
+				<td>RturnAccptd</a></td>
+				
+				</td>
+
+			{% endfor %}
+
+							
+		{% endfor %}
+	</table>
+</div>
+
+{% endblock %}
