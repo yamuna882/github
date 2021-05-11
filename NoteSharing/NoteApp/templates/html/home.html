@@ -1,67 +1,410 @@
-
 {% extends 'html/base.html' %}
-{% block title %}Home{% endblock %}
+{% block title %} Home {% endblock %}
 {% block content %}
-<!-- Background image -->
-<div class="bg-image">
+{% load static %}
 
-<!-- Background image -->
-<!-- {% load static %}
-
-<link href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.0/css/lightgallery.min.css" rel="stylesheet">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<script>
-    $(document).ready(function() {
-        $('#lightgallery').lightGallery();
-    });
-</script>
-<script src="https://cdn.jsdelivr.net/gh/bbbootstrap/libraries@main/lightgallery-all.min.js"></script>
-<div class="page-content page-container" id="page-content">
-    <div class="padding">
-        <div class="row container d-flex justify-content-center">
-            <div class="col-lg-12">
-                <div class="card">
-                    <div class="card-body">
-                        <h4 class="card-title">light Gallery</h4>
-                        <p class="card-text"> Click on any image to open in lightbox gallery </p>
-                        <div id="lightgallery" class="row lightGallery">
-                         <a href="{% static 'images/libnew.jpg' %}" class="image-tile" data-abc="true">
-                          <img src="https://i.imgur.com/EEguU02.jpg" alt="image small">
-                        </a>
-                           <a href="https://i.imgur.com/Uv2Yqzo.jpg" class="image-tile" data-abc="true">
-                            <img src="https://i.imgur.com/Uv2Yqzo.jpg" alt="image small">
-                          </a> 
-                            <a href="https://i.imgur.com/xbTAITF.jpg" class="image-tile" data-abc="true">
-                              <img src="https://i.imgur.com/xbTAITF.jpg" alt="image small">
-                            </a> 
-                            <a href="https://i.imgur.com/EEguU02.jpg" class="image-tile" data-abc="true"><img src="https://i.imgur.com/EEguU02.jpg">
-                            </a> 
-
-                      
+<div class="jumbotron text-center bg-dark text-white" style="margin-bottom:0">
+  <h1>AITS LIBRARY</h1>
   
-      <a href="{% static 'images/libnew.jpg' %}" class="image-tile" data-abc="true">
-        <img src="{% static 'images/libnew.jpg' %}" alt="image"> </a>
-      <a href="{% static 'images/libnew2.jpg' %}" class="image-tile" data-abc="true">
-        <img src="{% static 'images/libnew1.jpg' %}" alt="image"></a>
-      <a href="{% static 'images/libnew3.jpg' %}" class="image-tile" data-abc="true">
-        <img src="{% static 'images/libnew2.jpg' %}" alt="image"></a>
-      <a href="{% static 'images/libnew.jpg' %}" class="image-tile" data-abc="true">
-        <img src="{% static 'images/libnew3.jpg' %}" alt="image"></a> 
-    </div>
-</div></div>
+</div>
 
-                    </div>
+<!--Main layout-->
+<br>
+<br>
+<br>
+<br>
+<main class=" m-0 p-0">
+  <div>
+
+    <!--Google map-->
+    <div id="map-container-google" padding-bottom:56.25;
+    position:relative;
+    height:0;>
+
+      <iframe left:0; top:0; height="100%" width="100%" position:absolute; src="https://maps.google.com/maps?q=AITSTPT&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
+        style="border:0" allowfullscreen></iframe>
+    </div>
+
+  </div>
+</main>
+<!--Main layout-->
+
+
+<div class="container" style="margin-top:30px">
+  <div class="row">
+    <div class="card col-md mx-1 text-center border rounded"><br>
+      <h3>Books available in offline</h3>
+      <p><kbd>Branches</kbd></p>
+      <ul class="nav nav-pills flex-column">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Artificial Intelligence and Data Science</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Electronics and Communication Engineering (ECE)</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Computer Science and Engineering (CSE)</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">IoT and Cyber Security</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Electrical and Electronics Engineering (EEE)</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Mechanical Engineering (ME)</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Civil Engineering (CE)</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Humanities and Basic Sciences</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Master of Business Administration (MBA)</a>
+        </li>
+      </ul>
+      <hr class="d-sm-none">
+     
+      <br>
+
+      <h3>Books available in online</h3>
+      <p><kbd>Branches</kbd></p>
+      <ul class="nav nav-pills flex-column">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Artificial Intelligence and Data Science</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Electronics and Communication Engineering (ECE)</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Computer Science and Engineering (CSE)</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">IoT and Cyber Security</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Electrical and Electronics Engineering (EEE)</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Mechanical Engineering (ME)</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Civil Engineering (CE)</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Humanities and Basic Sciences</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Master of Business Administration (MBA)</a>
+        </li>
+      </ul>
+      <hr class="d-sm-none">
+    </div>
+
+
+    <div class="card col-md-8 mx-1 bg-dark text-white"><br><br>
+      <h2>LIBRARY</h2>
+      <p>The Central library has an extensive collection of books and is augmented on a continuous basis. The library subscribes to popular periodicals, national and international journals. The library is also having Educational Audio & Video Cassettes, CD ROMs, Back Volumes, Project Reports, Thesis reports etc. The library and reading room shall be open from 9.00 AM to 6 PM on all working days.</p>
+      <p>The Central Library has good reference collection and provides reference service to the members using these reference resources. Reference Books will not be issued from the reference section. Photo copying facility is available for books and Question Papers.</p>
+      <br><br><br>
+      <h2>DIGITAL LIBRARY</h2>
+      <p>Total Library Software System (TLSS) is full-featured Library software. It is windows-based licensed software. Modules of the system include: Library Guidelines, Acquisition, Accession, Circulation, Members, Staff, Stock, OPAC and Reports. TLSS is fully-automated software and is implemented partially in the campus.</p>
+      <p>The library has taken initiative to enrich with e-resources like e-books, e-journals, e-articles (both hard and soft copy-CD) related to subject and curriculum of the Institute which provides support to teachers and students. Books for Competitive Exams like GRE/TOEFL/GATE, Britannica encyclopedia, Dictionary, e-books, and Project Reports are housed.</p>
+      <p>The computer labs are fully air-conditioned and the students are privileged to have unlimited access round the clock. The laboratories are equipped with structured fibre optic and UTP cabling network and other relevant software. We have state-of-the-art computer laboratories with 730 computers (DELL, LENOVA & WIPRO make), 2 servers, and 50 printers with a dedicated network. The Overall ratio of computers to students is more than the number recommended.</p>
+      <p>The Computer laboratories are being upgraded from time to time to provide the best computational infrastructure.The Computer Centre houses powerful servers which provide computational environment comprising of multiple operating systems – Microsoft Windows, Linux & UNIX can be accessed from any of the nodes attached to the servers across the campus.</p>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <h2 class="text-warning">DETAILS OF CENTRAL LIBARY/DISCIPLAINE WISE</h2>
+  <p>Details of the Libary Books & jpurnals required as per the latest AICTE norms:</p>
+  <table class="table table-bordered">
+   <thead>
+      <tr>
+        <th>S.No</th>
+        <th>Courses</th>
+        <th>No.of titles</th>
+        <th>N.of books</th>
+        <th>National Journals</th>
+        <th>International Journals</th>
+        <th>e-Journals</th>
+      </tr>
+    </thead>
+    <thead class="thead-light text-center">
+      <tr>
+        <th colspan="7">UNDER GRADUATE-ENGINEERING</th>
+      </tr>
+    </thead>  
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>B.Tech-CSE</td>
+        <td>648</td>
+        <td>4519</td>
+        <td>09</td>
+        <td>2</td>
+        <td>Yes</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>B.Tech-ECE</td>
+        <td>538</td>
+        <td>3350</td>
+        <td>17</td>
+        <td>2</td>
+        <td>Yes</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>B.Tech-EEE</td>
+        <td>546</td>
+        <td>3364</td>
+        <td>04</td>
+        <td>2</td>
+        <td>Yes</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>B.Tech-civil</td>
+        <td>510</td>
+        <td>2979</td>
+        <td>10</td>
+        <td>2</td>
+        <td>Yes</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>B.Tech-ME</td>
+        <td>529</td>
+        <td>2720</td>
+        <td>16</td>
+        <td>2</td>
+        <td>Yes</td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>B.Tech-H&S</td>
+        <td>554</td>
+        <td>2808</td>
+        <td>---</td>
+        <td>---</td>
+        <td>---</td>
+      </tr>
+    </tbody>
+   
+    <thead class="thead-light text-center">
+      <tr>
+        <th colspan="7">POST GRADUATE-ENGINEERING</th>
+      </tr>
+    </thead>
+   
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>M.Tech-(CSE)</td>
+        <td>114</td>
+        <td>463</td>
+        <td>9</td>
+        <td>2</td>
+        <td>Yes</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>M.Tech-(DECS)</td>
+        <td>208</td>
+        <td>797</td>
+        <td>10</td>
+        <td>4</td>
+        <td>Yes</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>M.Tech-(PS)</td>
+        <td>120</td>
+        <td>481</td>
+        <td>9</td>
+        <td>4</td>
+        <td>Yes</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>M.Tech-(SE)</td>
+        <td>77</td>
+        <td>425</td>
+        <td>9</td>
+        <td>2</td>
+        <td>Yes</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>M.Tech-(PE&ED)</td>
+        <td>63</td>
+        <td>265</td>
+        <td>9</td>
+        <td>2</td>
+        <td>Yes</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>TOTAL</td>
+        <td>3907</td>
+        <td>22171</td>
+        <td>102</td>
+        <td>24</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>SC Book Bank</td>
+        <td>80</td>
+        <td>1318</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </tbody>
+
+    <thead class="thead-light text-center">
+    <tr>
+      <th colspan="7">POST GRADUATE-OTHERS</th>
+    </tr>
+  </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>MBA 1&2</td>
+        <td>717</td>
+        <td>3458</td>
+        <td>16</td>
+        <td>5</td>
+        <td>Yes</td>
+      </tr>
+      <thead class="thead-light text-center">
+      <tr>
+        <th colspan="2">GRAND TOTAL</th>
+        <td>4704</td>
+        <td>26947</td>
+        <td>118</td>
+        <td>29</td>
+        <td>147</td>
+      </tr>
+    </thead>
+  </table>
+</div>
+
+
+<div class="container row_section">
+<h3 class="title2">Services</h3>
+<ul class="ul-list list_bullet mar_bt_15"><li>Circulation Service</li>
+<li>Reference Service</li>
+<li>Web OPAC (On-line Public Access Catalogue)</li>
+<li>Study Book Service</li>
+<li>STARS Book Bank</li>
+<li>Resource Sharing</li>
+<li>Multimedia Resource Service</li>
+<li>On-line Databases</li>
+<li>NPTEL e-Learning Facility</li>
+<li>User Education Program</li>
+</ul>
+
+<h3 class="title2">
+  <strong>Membership</strong>
+</h3>
+<p>All students, faculty members and staff of the institute are membership of the library.</p>
+
+</div>
+
+<div class="widgets_row">
+  <div class="container">
+    <div class="footer_widgets">
+      <div class="row">
+        <div class="card col-lg-4 col-md-4 col-sm-6 col-xs-12 shadow">
+          <section id="text-7" class="widget widget_text">
+            <h4 class="widget_title no_stripe">Contact Us</h4>
+            <div class="textwidget">
+              <div class="foot-contact">Annamacharya Institute of Technology & Sciences<br>Venkatapuram,Renigunta, Tirupati<br>Chitoor District, Andhra Pradesh – 517520.
+                <p>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 no-pad">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+</svg> :
+                  <a class="footcontact" href="tel:0877-2285609">0877-2285609</a>
+                  <br>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+</svg> :
+                  <a class="footcontact" href="tel:0877-2285608">0877-2285608</a>
                 </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-24 no-pad"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-phone-fill" viewBox="0 0 16 16">
+  <path d="M3 2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V2zm6 11a1 1 0 1 0-2 0 1 1 0 0 0 2 0z"/>
+</svg> :
+                  <a class="" href="tel:+91-9948149222">+91-9948149222</a><br>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-phone-fill" viewBox="0 0 16 16">
+  <path d="M3 2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V2zm6 11a1 1 0 1 0-2 0 1 1 0 0 0 2 0z"/>
+</svg> :
+                  <a class="footcontact" href="tel:+91-9948661276">+91-9948661276</a>
+                </p>
+                <p>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-right-text-fill" viewBox="0 0 16 16">
+                    <path d="M16 2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h9.586a1 1 0 0 1 .707.293l2.853 2.853a.5.5 0 0 0 .854-.353V2zM3.5 3h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1 0-1zm0 2.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1 0-1zm0 2.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1z"/></svg> :  
+                  <a class="footcontact" href="mailto:aitstpt@yahoo.com">aitstpt@yahoo.com</a> | <a class="footcontact" href="mailto:aitsadmissions@gmail.com">aitsadmissions@gmail.com</a>
+                </p>
+              </div>
             </div>
+          </div>
+        </section>
+      </div>
+      <div class="card col-lg-4 col-md-4 col-sm-6 col-xs-12 shadow">
+        <section id="recent-posts-2" class="widget widget_recent_entries">    <h4 class="widget_title no_stripe">Recent Post</h4>
+            <ul>
+              <li>
+                <a href="https://aits-tpt.edu.in/blog/5-productive-things-to-do-in-lock-down-due-to-covid-19-pandemic/">5 productive things to do in lock down due to Covid-19 Pandemic</a>
+                <span class="post-date">May 20, 2020</span>
+              </li>
+              <li>
+                <a href="https://aits-tpt.edu.in/blog/3-tips-to-get-hired-by-companies-amidst-covid-19-pandemic/">3 tips to get hired by companies amidst Covid-19 pandemic</a>
+                <span class="post-date">May 20, 2020</span>
+              </li>
+            </ul>
+          </section>
         </div>
+        <div class="card col-lg-4 col-md-4 col-sm-6 col-xs-12 shadow">
+          <section id="text-8" class="widget widget_text">
+            <h4 class="widget_title no_stripe">News & Events</h4>
+            <div class="textwidget">
+              <div class="man-bg">
+                <div id="text-slider">
+                  <div class="text-slideshow">
+                    <article class=".dummy-slide" style="position: static; visibility: hidden; display: block;">STTP on Industrial Automation using Programmable logic
+                      <span style="visibility: hidden;">Controllers and Electro-Mecanical Transducers</span>
+                    </article>
+                    <article>STTP on Industrial Automation using Programmable logic
+                      <span>Controllers and Electro-Mecanical Transducers</span>
+                    </article>
+                  </div>
+                  <div id="text-slider-controls">
+                    <a href="#" class="prev">
+                      <i class="icon-chevron-left nav-color"></i>
+                    </a>
+                    <a href="#" class="next">
+                      <i class="icon-chevron-right nav-color"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+         
+        </div>
+      </div>
     </div>
+  </div>
 </div>
-<div class="card col-md mx-2 mt-2 text-center bg-danger">
-
-</div> -->
-
-
 </div>
-
+</div>
 
 {% endblock %}
+
+

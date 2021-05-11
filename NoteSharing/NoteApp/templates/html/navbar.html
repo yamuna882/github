@@ -17,11 +17,11 @@
     <li class="nav-item">
       <a class="nav-link" href="{% url 'at' %}">AboutUs</a>
     </li>
-   
-    
-    <li class="nav-item">
-      <a class="nav-link" href="{% url 'Books' %}">Contact Details</a>
+   <li class="nav-item">
+      <a class="nav-link" href="{% url 'ct' %}">Contactdetails</a>
     </li>
+    
+    
     
     {% else %}
     {% if user.is_superuser %}
@@ -34,9 +34,7 @@
     <li class="nav-item">
       <a class="nav-link" href="{% url 'complaint' %}">Complaint</a>
     </li>
-    <li class="nav-item">
-      <a class="nav-link" href="{% url 'ct' %}">ContactUs</a>
-    </li>
+    
     <li class="nav-item">
       <a class="nav-link" href="{% url 'books_avail' %}">Books Available</a>
       
@@ -65,9 +63,7 @@
     <li class="nav-item">
       <a class="nav-link" href="{% url 'complaint' %}">Complaint</a>
     </li>
-    <li class="nav-item">
-      <a class="nav-link" href="{% url 'ct' %}">ContactUs</a>
-    </li>
+    
     <li class="nav-item">
       <a class="nav-link" href="{% url 'studentbooks_avail' %}">Books Available</a>
       

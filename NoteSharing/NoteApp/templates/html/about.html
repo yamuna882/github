@@ -1,383 +1,195 @@
+
 {% extends 'html/base.html' %}
-{% block title %}Home{% endblock %}
+{% block title %}About{% endblock %}
 {% block content %}
-<!-- Background image -->
+{% load static %}
+<br>
+<br><br><br><br>
+<div class="container p-3 my-3 bg-secondary text-white">
 
+<div>
+<h1 class="text-center text-white bg-success border rounded p-2 my-2">Aits Library</h1>
+<br>
+<p>Annamacharya Institute of Technology & Sciences, Tirupati (AITS-T) was established in the year 2007, with a belief that education can influence and mould young minds. Within a decade, AITS, Tirupati received the prestigious stature of an institution with quality education.</p>
+<br>
+<p>It is a sprawling campus of more than 45 acres of land. Attributing to the historical importance, Annamacharya, the beloved disciple of Lord Venkateswara who always cherishes to find his berth at his lotus feet. Symbolically, the institute has been christened the name of Annamacharya and is established at the foot of Seven Hills the abode of lord Venkateswara.</p>
+<br>
+<p>It is managed by Annamacharya Educational Trust, a group of professionals for whom education is a passion. With an experience of over 20 years in the field of Engineering, Management, Education and Pharmacy, the Trust runs many colleges across Telangana and Andhra Pradesh states.</p>
+<br>
+<p>Being a part of Annamacharya Group of Institutions, the institute is committed to imparting engineering skills to the students and provide a window for them to explore the opportunities to achieve their goals.  Annamacharya Institute of Technology and Sciences, Tirupati endeavours to be the leading centre providing world-class education while incorporating innovative teaching methods for engineering and research.</p>
+<br><br>
+<div id="demo" class="carousel slide" data-ride="carousel">
+<!-- Indicators -->
+<ul class="carousel-indicators">
+  <li data-target="#demo" data-slide-to="0" class="active"></li>
+<li data-target="#demo" data-slide-to="1"></li>
+<li data-target="#demo" data-slide-to="2"></li>
+</ul>
 
-
-<div style="background-image:url('https://images.all-free-download.com/images/graphicthumb/forest_513163.jpg');" >
-
-
-<!-- Background image -->
-<div class="container">
-  {% if messages %}
-       {% for j in messages %}
-         <div class="alert alert-{{j.tags}} alert-dismissible">
-        <button type="button" class="close" data-dismiss="alert">&times;</button>
-         {{j}}
-          
-
-
-       {% endfor %}
-  {% endif %}
-  <div class="row mt-4">
-    <div class="card col-md mx-2 text-center" style='background-color:floralwhite'>
-      <h3>Note Sharing</h3>
-    </div>
-    <div class="card col-md text-center" style='background-color:floralwhite'>
-      <h3>User Details</h3>
-    </div>
-  </div>
+<!-- The slideshow -->
+<div class="container p-3 my-3 bg-info text-white">
+<div class="carousel-inner">
+<div class="carousel-item active" >
+<img src="{% static 'images/libnew3.jpg' %}" class="mx-auto d-block" style="width:50%">
 </div>
+             <div class="carousel-item">
+             <img src="{% static 'images/libnew.jpg' %}" class="mx-auto d-block" style="width:50%">
+             </div>
+             <div class="carousel-item">
+              <img src="{% static 'images/libnew2.jpg' %}" class="mx-auto d-block" style="width:50%">
+             </div>
+             <div class="carousel-item">
+              <img src="{% static 'images/libnew1.jpg' %}" alt="" class="mx-auto d-block" style="width:50%">
+             </div>
+         </div>
 
+         <!-- Left and right controls -->
+         <a class="carousel-control-prev" href="#demo" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+         </a>
+         <a class="carousel-control-next" href="#demo" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+         </a>
+     </div></div>
+<div>
+<h2 class="text-center text-white bg-success border rounded p-2 my-2">Books for each branch</h2>
+<br>
+<h3 style="color:gold;">Artificial Intelligence and Data Science</h3>
+<p>
+In recent years, Artificial Intelligence and Data Science has gained presence in all areas of life. Data science is an inter-disciplinary field that uses scientific methods, processes, algorithms and systems to extract knowledge, insights from heterogeneous data using artificial intelligence. This programme seeks to determine the importance of Artificial Intelligence and Data Science and its real-time applications in all aspects of life.
+</p>
+<p>
+Data science is a “concept to unify statistics, data analysis and their related methods” in order to “understand and analyze actual phenomena” with data. It uses techniques and theories drawn from many fields within the context of mathematics, statistics, computer science, domain knowledge and information science. This a result of the contribution by the massive explosion in data and the growing need of the industries to rely on data to create better products. We have become a part of a data-driven society. Data has become a dire need for industries that need data to make careful decisions.
+</p>
+<p>
+Artificial Intelligence makes the use of algorithms to perform autonomous actions. Artificial Intelligence is a collection of technologies that excel at extracting insights and patterns from large sets of data, then making predictions based on that information.
+</p>
+<p>
+The B.Tech program in Artificial Intelligence and Data Science is started in the academic year 2020 – 21 with an intake of 60
+</p>
+<p style="color:red;">Books are available in both offline and online</p>
+<br>
 
-<style>
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
-}
+<h3 style="color:gold;">Computer Science And Enineering</h3>
+<p>
+The field of Computer Science and Engineering has been pushing the envelope of almost all other disciplines, which use computing as a fundamental means of inquiry and tool for discovery. Computer science and engineering offers exciting, intellectually challenging, and rapidly growing career opportunities. It is the heart of where the action is: whether this means intelligent game playing, mobile applications, smart robots, cloud computing, data security or social networks.
+</p>
+<p>
+The B.Tech program in Computer Science and Engineering was started in the year 2007 with an intake of 60, increased to 120 in 2008 and 180 in 2017. Besides, an additional 20% seats are under lateral entry scheme.
+</p>
+<p>
+M.Tech (Computer Science and Engineering) is a two year full time post-graduate programme approved by the All India Council of Technical Education (AICTE) for the students who have a B.E / B. Tech in any branch of engineering, M.Sc and M.C.A. The course is offered by the Department of Computer Science & Engineering by highly qualified and experienced teaching faculty. Intake to this course is 18 admitted through J N T University’s.
+</p>
+<p>
+The B.Tech CSE Programme was accredited by NBA first time under tier – II in 2016 and further extension of accreditation in granted up to June 2023.
+</p>
+<p style="color:red;">Books are available in both offline and online</p>
+<br>
 
-html {
-  box-sizing: border-box;
-}
+<h3 style="color:gold;">Electronics and Communication Engineering (ECE)</h3>
+<p>
+Electronics and Communication Engineering department is aimed to set a path of success to “Budding Engineers”. The department further endeavors to impart high quality education and produce graduates with a sound knowledge on advanced research in ECE. It includes a team of well qualified, experienced and dedicated faculty members with industrial and research background.
+                It offers undergraduate, postgraduate programmes in various disciplines of Electronics and Communication Engineering. B.Tech ECE Programme was accredited by NBA first time under tier – II in 2016 and further extension of accreditation in granted up to June 2023.
+</p>
+<p>
+The department started UG Program with initial intake of 60 students in the year 2007 and the intake is enhanced to 120 in the year 2011, 180 in the year 2014. The department introduced a PG Program in Digital Systems and Computer Electronics (DSCE) with an intake of 18 students. Also new PG program namely Digital Electronics and Communication Systems (DECS) started in the year 2012 with intake of 24 students. Department has sanctioned R&D Cell in the year 2017. Department also offer Ph.D programme under R&D cell since 2017. The Department offers PhD program full time in various specializations under R&D Cell.
+</p>
+<p>
+Department has obtained permanent affiliation to JNTUA for all the programmes UG, PG and R&D Cell. The Department has developed its Vision, Mission, Programme Outcomes, and Programme Educational Objectives and mapped. Course Outcomes for all the courses are enlisted and CO attainment metrics are also available. Department is accredited NBA and institute is accredited by NAAC and recognized under sections 2(f) and 12(B) by UGC. Teaching-Learning system has accommodated the various OBE (Outcome Based Education) methods and strategies like organizing QC activities. Most of the faculty have adopted ICT mode of teaching via audio visual mode using LCD projector as an effective teaching aid.
+</p>
+<p>
+The department has IETE Association through which students are allowed to enrich their technical knowledge by attending / participating national level workshops, seminars and working model exhibitions. A department technical association was formed in the year 2008 with an objective of motivating the students to actively participate and organize technical and non technical events by name TRISHNA every year. The activities under these associations has given a scope for both student and teaching community to get acquainted in different areas like 1D & 2D Signal Processing, Embedded Systems, RADARS, Telecommunication, Mobile & Satellite Communications and many more. As a part of curriculum, industrial visits are arranged to students so that they are inspired to do their project works in R&D organizations like NARL, SHAR, NAL, BSNL,HAL, etc. The students have been placed in various reputed organizations through ON/ OFF campus placements. Some of the students are motivated to pursue higher education in reputed Universities / Institutes in India and abroad.
+</p>
+<p style="color:red;">Books are available in both offline and online</p>
+<br>
 
-*, *:before, *:after {
-  box-sizing: inherit;
-}
+<h3 style="color:gold;">IoT and Cyber Security</h3>
+<p>
+In recent years, Internet of Things (IoT) has gained presence in all areas of life. Whilst private sector is the forerunner in the adoption of these devices, public sector usage has been lagging. With the rise of smart initiatives, public organizations are increasingly implementing IoT. This programme seeks to determine the importance of IoT and its real-time applications in all aspects of life.
+</p>
+<p>
+Cyber security refers to the body of technologies, processes, and practices designed to protect networks, devices, programs, and data from attack, damage, or unauthorized access. Cyber security describes the discipline dedicated to protecting that information and the systems used to process or store it.
+</p>
+<p>
+Blockchain is a revolutionary technology set to change the future of computing and disrupt several industries with more innovative solutions. This technology has been adopted by more than one-third of the companies in the world and demands for Blockchain developers are ever-increasing.
+</p>
+<p>
+The B.Tech program in Computer Science and Engineering (IoT and Cyber Security including Blockchain Technology) is started from the academic year 2020 – 21 with an intake of 60.
+</p>
+<p style="color:red;">Books are available in both offline and online</p>
+<br>
 
-.column {
-  float: left;
-  width: 33.3%;
-  margin-bottom: 16px;
-  padding: 0 8px;
-}
+<h3 style="color:gold;">Electrical and Electronics Engineering (EEE)</h3>
+<p>
+The Department of Electrical & Electronics Engineering was established in the year 2007 by offering B.Tech. Programme in Electrical and Electronics Engineering (EEE) with an intake of 60 with the aim of importing high quality technical education in the area of Electrical and Electronics Engineering. The department also offers M.Tech. Programmes with specialization in Power Systems (PS) and Power Electronics (PE) with an intake of 24 and 24 respectively. B.Tech. (EEE) programme was accredited by NBA in the year of 2016. The pure expertise and dedication of the faculty members along with infrastructural facilities coupled with perseverance of the students have catapulted our branch to the top league.
+</p>
+<p>
+The department has a student forum FETA (Faradays Electrical Technical Association) for conducting career developing interpersonal and intrapersonal skills of students. It organizes Seminars, Quiz Programmes, Industrial Visits, Paper Contests, Group Discussions, Guest Lectures, Career Guidance, and Games etc under its auspices.
+</p>
+<p>
+In order to meet the present day advanced technological changes, the Department of EEE also organizes workshops, GENMOTRA, GETRADI events, FDPs and symposia in various specialized fields. FETA also organizes Technical Exhibitions for the benefit of local public.
+</p>
+<p style="color:red;">Books are available in both offline and online</p>
+<br>
 
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  margin: 8px;
-}
+<h3 style="color:gold;">Mechanical Engineering (ME)</h3>
+<p>
+It is the discipline that applies Engineering physics and Material science principles to Design, Analysis, Manufacture and Maintain Mechanical systems. It is one of the oldest and broadest of the Engineering discipline. It also connecting with Electrical and Electronic devices to improve the performance and efficient work on Design and Manufacturing field by automation and Robotics. Now a days this Mechanical Engineering programme getting in wise role to operate the machineries with low manpower and highly profitable, reliable products that satisfy the customer.
+</p>
+<p>
+The Department started UG Program with initial intake of 60 students in the year 2010 and the intake is enhanced to 120 in the year 2012. The department introduced a PG Program in Production Engineering & Engineering Design (PE & ED) with an intake of 18 students.
+</p>
+<p>
+Department has obtained permanent affiliation to JNTUA for all the programmes UG and PG. The Department has developed its Vision, Mission, Programme Outcomes, and Programme Educational Objectives and mapped. Course Outcomes for all the courses are enlisted and CO attainment metrics are also available. Teaching-Learning system has accommodated the various OBE (Outcome Based Education) methods and strategies like organizing QC activities.
+</p>
+<p>
+The department has STUDENT CLUB Association through which students are allowed to enrich their technical knowledge by attending / participating National level workshops, seminars and working model exhibitions.
+</p>
+<p style="color:red;">Books are available in both offline and online</p>
+<br>
 
-.about-section {
-  padding: 50px;
-  text-align: center;
-  background-color: #474e5d;
-  color: white;
-}
+<h3 style="color:gold;">Civil Engineering (CE)</h3>
+<p>
+The Civil Engineering Department is one of the lead departments in the institute and was established in 2009. The initial journey was started with a U.G. Program (B. Tech in Civil Engineering). Later, the department started a P.G. Program (M. Tech in Structural Engineering) in the year 2013. With the eminent faculty and well acquainted facilities, extensive research work is going on in the various disciplines of Civil Engineering.
+</p>
+<p style="color:red;">Books are available in both offline and online</p>
+<br>
 
-.container {
-  padding: 0 16px;
-}
+<h3 style="color:gold;">Humanities and Basic Sciences</h3>
+<p>
+The Department of Humanities and Basic Sciences is the bridging and building block for the engineering graduates to adjust and orient them into their core engineering courses. This Department is devoted to foster the fundamental principles and understanding of science to enhance the students’ basic knowledge of Engineering. Besides academics, the Department is actively involved in the development of students’ personality, communication skills and soft skills to boost them up in the modern and globally competitive environment.
+</p>
+<p>
+The Department of Humanities and Basic Sciences is a 31 member dynamic team with a unique combination of different disciplines like Languages, Mathematics, Physics, Chemistry, Environmental Studies, Physical Education, and Library which are essential for the Engineers during the course of study and after graduation to enhance their ability to analyze and tackle any challenges and communicate their ideas effectively.
+</p>
+<p>
+The students of this department are highly benefitted by the knowledge and experience of a good no. of Doctorates with research articles published in high impact factor journals at National and International levels, presentations in National and International Conferences. The faculty members regularly participate in workshops, conferences, seminars, symposiums, faculty development programmes and other training programmes which enhances their teaching capabilities in order to guide their students better. Extra care is extended to slow learners through remedial classes. The services of Senior Faculty from Reputed Universities and Institutes are rendered. Effective monitoring system includes student performers, appraisal, and direct contact with the parents, attendance, suggestions etc. for the benefit of students in the academics.
+</p>
+<p>
+The best of all, to enrich and edify the holistic development of the students, this department contributes the best efforts to make the Students part and participle in British Council Communication skills Program, Campus Recruitment Training, Literary Club, Counseling, and Quality Circle Activities so and so on.
+</p>
+<p>
+The strength of the department lies in its dedicated faculty members and students. Laboratories are established with ample resources and amenities, and Center of Excellence. The department is under the vigilance of CCTV.
+</p>
+<p style="color:red;">Books are available in both offline and online</p>
+<br>
 
-.container::after, .row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-.title {
-  color: grey;
-}
-
-.button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 8px;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-}
-
-.button:hover {
-  background-color: #555;
-}
-
-@media screen and (max-width: 650px) {
-  .column {
-    width: 100%;
-    display: block;
-  }
-}
-</style>
-
-
-<div class="about-section">
-  <h1>About Us</h1>
-  <p>Some text about who we are and what we do.</p>
-  <p>Resize the browser window to see that this page is responsive by the way.</p>
-  <nav id="navbar-example2" class="navbar navbar-light bg-light">
-  <a class="navbar-brand" href="">Navbar</a>
-  <ul class="nav nav-pills">
-    <li class="nav-item">
-      <a class="nav-link" href="">Purush</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="">Tharun</a>
-    </li>
-    <li class="nav-item dropdown">
-      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-      <div class="dropdown-menu">
-        <a class="dropdown-item" href="#one">one</a>
-        <a class="dropdown-item" href="#two">two</a>
-        <div role="separator" class="dropdown-divider"></div>
-        <a class="dropdown-item" href="#three">three</a>
-      </div>
-    </li>
-  </ul>
-</nav>
-<div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
-  <h4 id="fat">Purush</h4>
-  <h2 style="text-align:center">Our Team</h2>
-<div class="row">
-  <div class="column">
-    <div class="card">
-      <img src="/w3images/team1.jpg" alt="purushotham" style="width:100%">
-      <div class="container">
-        <h2>Purushotham Reddy</h2>
-        <p class="title">Team lead</p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-        <p>purushotham@email.com</p>
-        <p><button class="button">Contact</button></p>
-      </div>
-    </div>
-  </div>
-
-  <h4 id="mdo">Tharun</h4>
-  
-
-  <div class="column">
-    <div class="card">
-      <img src="/w3images/team2.jpg" alt="Tharunsai" style="width:100%">
-      <div class="container">
-        <h2>Tharunsai Reddy</h2>
-        <p class="title">Member</p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-        <p>tharunsai@email.com</p>
-        <p><button class="button">Contact</button></p>
-      </div>
-    </div>
-  </div>
-
-  <h4 id="one">one</h4>
- 
-
-  <div class="column">
-    <div class="card">
-      <img src="/w3images/team3.jpg" alt="Reddy" style="width:100%">
-      <div class="container">
-        <h2>Reddy</h2>
-        <p class="title">Designer</p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-        <p>reddy123@gmail.com</p>
-        <p><button class="button">Contact</button></p>
-      </div>
-    </div>
-  </div>
-</div>
-
-  <h4 id="two">two</h4>
-  <p>...</p>
-  <h4 id="three">three</h4>
-  <p>...</p>
-</div>
-</div>
-
-
- <h3>This is about page</h3>
-</div>
-</div>
-</div>">
-  <div style="background-image: url('https://mdbootstrap.com/img/Photos/Others/images/76.jpg');
-            height: 100%">
-
-<!-- Background image -->
-<div class="container">
-  {% if messages %}
-       {% for j in messages %}
-         <div class="alert alert-{{j.tags}} alert-dismissible">
-        <button type="button" class="close" data-dismiss="alert">&times;</button>
-         {{j}}
-          
-
-
-       {% endfor %}
-  {% endif %}
-  <div class="row mt-4">
-    <div class="card col-md mx-2 text-center" style='background-color:floralwhite'>
-      <h3>Note Sharing</h3>
-    </div>
-    <div class="card col-md text-center" style='background-color:floralwhite'>
-      <h3>User Details</h3>
-    </div>
-  </div>
-</div>
-
-
-<style>
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
-}
-
-html {
-  box-sizing: border-box;
-}
-
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
-.column {
-  float: left;
-  width: 33.3%;
-  margin-bottom: 16px;
-  padding: 0 8px;
-}
-
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  margin: 8px;
-}
-
-.about-section {
-  padding: 50px;
-  text-align: center;
-  background-color: #474e5d;
-  color: white;
-}
-
-.container {
-  padding: 0 16px;
-}
-
-.container::after, .row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-.title {
-  color: grey;
-}
-
-.button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 8px;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-}
-
-.button:hover {
-  background-color: #555;
-}
-
-@media screen and (max-width: 650px) {
-  .column {
-    width: 100%;
-    display: block;
-  }
-}
-</style>
-
-
-<div class="about-section">
-  <h1>About Us</h1>
-  <p>Some text about who we are and what we do.</p>
-  <p>Resize the browser window to see that this page is responsive by the way.</p>
-  <nav id="navbar-example2" class="navbar navbar-light bg-light">
-  <a class="navbar-brand" href="">Navbar</a>
-  <ul class="nav nav-pills">
-    <li class="nav-item">
-      <a class="nav-link" href="">Purush</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="">Tharun</a>
-    </li>
-    <li class="nav-item dropdown">
-      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-      <div class="dropdown-menu">
-        <a class="dropdown-item" href="#one">one</a>
-        <a class="dropdown-item" href="#two">two</a>
-        <div role="separator" class="dropdown-divider"></div>
-        <a class="dropdown-item" href="#three">three</a>
-      </div>
-    </li>
-  </ul>
-</nav>
-<div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
-  <h4 id="fat">Purush</h4>
-  <h2 style="text-align:center">Our Team</h2>
-<div class="row">
-  <div class="column">
-    <div class="card">
-      <img src="/w3images/team1.jpg" alt="purushotham" style="width:100%">
-      <div class="container">
-        <h2>Purushotham Reddy</h2>
-        <p class="title">Team lead</p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-        <p>purushotham@email.com</p>
-        <p><button class="button">Contact</button></p>
-      </div>
-    </div>
-  </div>
-
-  <h4 id="mdo">Tharun</h4>
-  
-
-  <div class="column">
-    <div class="card">
-      <img src="/w3images/team2.jpg" alt="Tharunsai" style="width:100%">
-      <div class="container">
-        <h2>Tharunsai Reddy</h2>
-        <p class="title">Member</p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-        <p>tharunsai@email.com</p>
-        <p><button class="button">Contact</button></p>
-      </div>
-    </div>
-  </div>
-
-  <h4 id="one">one</h4>
- 
-
-  <div class="column">
-    <div class="card">
-      <img src="/w3images/team3.jpg" alt="Reddy" style="width:100%">
-      <div class="container">
-        <h2>Reddy</h2>
-        <p class="title">Designer</p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-        <p>reddy123@gmail.com</p>
-        <p><button class="button">Contact</button></p>
-      </div>
-    </div>
-  </div>
-</div>
-
-  <h4 id="two">two</h4>
-  <p>...</p>
-  <h4 id="three">three</h4>
-  <p>...</p>
-</div>
-</div>
-
-<div class="container-fluid">
-  <div class="bg-image"
-style="background-image: url('https://images.all-free-download.com/images/graphicthumb/forest_513163.jpg');
-      height: 50vh">
-</div>
- <h3>This is about page</h3>
-</div>
+<h3 style="color:gold;">Master of Business Administration (MBA)</h3>
+<p>
+The department, established in 2008 has been able to impart quality managerial competencies for students with qualified, experienced and senior faculty members including Doctorates. The department offers premier professional training that keeps the students in pace with the latest developments in the field of Business Management.
+</p>
+<p>
+The department regularly conducts Personality Development courses, Soft skill courses and employment oriented courses for providing the students a clear and decisive edge in employability through modular and supplementary programs based on industry tracking and feedback. The department has forged strong Institute-Industry Interface with leading companies to continuously bridge the gap between college education and Industry needs through summer Internships, pre-employment training programs, guest lectures and other Interaction programs.
+</p>
+<p>
+Our goal is to impart value based quality education along with development of positive attitude, skills and abilities to apply their knowledge in order to face the challenges of future. We strive in creating capable young managers and business professionals with great thirst for knowledge and curiosity in the area of management.
+</p>
+<p>
+I would like to conclude with the words of Thomas Friedman who has rightly opined “World is flat opportunities are immense. It’s just a question of identifying opportunities and making the best of them”. I wish a very best of luck to the students.
+</p>
+<p style="color:red;">Books are available in both offline and online</p>
+<br>
 </div>
 </div>
 </div>
 {% endblock %}
-
-

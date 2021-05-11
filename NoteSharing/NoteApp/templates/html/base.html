@@ -1,6 +1,8 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
+<html lang="telugu">
+
 <head>
   <title>{% block title %}{% endblock %}</title>
   <meta charset="utf-8">
@@ -11,9 +13,61 @@
   <script src="{% static 'js/bootstrap.min.js' %}"></script>
 </head>
 <body>
-	{% include 'html/navbar.html' %}
+  {% include 'html/navbar.html' %}
+  {}
+  {% block content %}
+  {% endblock %}
+
+  <!-- Footer -->
+
+<footer class="bg-light text-dark text-center text-lg-start ">
+  <div class="col mx-5 md-4">
+  <!--Grid container-->
+
+
     
-	{% block content %}
-	{% endblock %}
+    
+    <!--Grid row-->
+    
+      
+      <!--Grid column-->
+      <div class="text-center p-2">
+        
+</div>
+
+        <h5 class="text-center text-uppercase"> AITS :: TPT</h5><div class="col mx-3">
+
+
+        <p>
+         AITS Library  different zoners of books that can be available for staff of annamacharya college of technology and sciences also mainly for the students those who are studying in this college of AITS..
+        </p>
+      </div>
+      
+
+
+      <!--Grid column-->
+
+     
+      <!--Grid column-->
+            <!--Grid column-->
+    </div>
+    <!--Grid row-->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+
+   <div class="text-center text-white p-2" style="background-color: rgba(0, 0, 0, 0.2);">
+    2018 © Annamacharya Institute of Technology & Sciences. All rights reserved.
+    <a class="text-white" href="https://www.aits-tpt.edu.in">Annamacharya Instuite of Technology</a>
+  </div>
+  <div class="text-center text-white p-2" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2020 Copyright:
+    <a class="text-white" href="https://aits-tpt-edu.in/refund-policy/">Refund-Policy</a>
+  </div>
+  
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
 </body>
 </html>
